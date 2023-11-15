@@ -1,0 +1,85 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <!-- <script src="3rd/bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="3rd/wavesurfer.js/wavesurfer.min.js"></script>
+        <!-- <script src="3rd/wavesurfer.js/plugin/wavesurfer.timeline.min.js"></script>
+        <script src="3rd/wavesurfer.js/plugin/wavesurfer.regions.min.js"></script>
+        <script src="3rd/wavesurfer.js/plugin/wavesurfer.minimap.min.js"></script> -->
+    
+        <!-- <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.cursor.js"></script> -->
+        <!-- <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.spectrogram.js"></script> -->
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+    <h2>Investigación propuesta reconocimiento del habla (Dominicana) mediante Inteligencia Artificial</h2>
+    <p>
+        Los 3 primeros audios fueron mejorados de 8Khz/in16 a 16Khz/float64.
+    </p>
+    <p>
+        El último audio, que es un audio de estudio, tiene una transcripción perfecta y el formato de mayor calidad (44Khz/float64)
+    </p>
+    <p>
+        Modelo: wav2vec2 personalizado/ 944 horas de data
+    </p>
+    <p>
+        Propuesta: Para conseguir un rendimiento mejorado se recomienda hacer <b>proyecto de investigación y desarrollo</b> de un modelo finamente apropiado al habla Dominicana.
+    </p>
+    
+    <div class="container">
+        <div class="cards">
+          <div class="card-item">
+            <div class="card-image">
+                <div id="waveform1"></div>
+                <button class="play1 btn">&#9658; Play</button>
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Conversaci&oacute;n An&oacute;nima a Call Center</h2>
+              <p class="card-intro">"Buenas noches gracias fuema la palapita rose la asiste que le puedo servir ola buena yo quiero hacer un pedido porfa por quien tengo el placer poy bien señora rusa e sera comprobante no santo domingo peromítame su elta en señora rosa por famo"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-item">
+            <div class="card-image">
+                <div id="waveform2"></div>
+                <button class="play2 btn">&#9658; Play</button>
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Fragmento de CallHome/Conversaci&oacute;n</h2>
+              <p class="card-intro">"Escribe máquina y layla computadora escribe es cualquier cosa menos máquina viste porque porque no reconoce las voces entonces ya lo tiene más o menos hecho en inglés y ahora lo están haciendo en español ajá."</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+            <div class="card-item">
+              <div class="card-image">
+                  <div id="waveform3"></div>
+                  <button class="play3 btn">&#9658; Play</button>
+              </div>
+              <div class="card-info">
+                <h2 class="card-title">Fragmento Podcast "El mañanero"</h2>
+                <p class="card-intro">"Al pendejo que cot una posición malisima alo porque aor ahora muy bueno eneleizalo así pero no tabnotar pero pero señor goneti señor bonel y mi jefe mi patrón s mi patrón boli ye verdad muestra cievese de mi consejo ante empeza la temporada que"
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="cards">
+          <div class="card-item">
+            <div class="card-image">
+                <div id="waveform4"></div>
+                <button class="play4 btn">&#9658; Play</button>
+            </div>
+            <div class="card-info">
+              <h2 class="card-title">Audio de Common Voice Mozilla Foundation</h2>
+              <p class="card-intro">"Finalmente el instituto electoral ratificó a la candidata pero el partido quedó seriamente fracturado"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
